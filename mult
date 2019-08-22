@@ -1,0 +1,4 @@
+#!/bin/bash
+iverilog acc.v bit_extract.v int_reg.v mult_8bit.v part_prod.v seq_count.v tb.v -o mult.vvp
+vvp mult.vvp
+gtkwave wave.vcd
